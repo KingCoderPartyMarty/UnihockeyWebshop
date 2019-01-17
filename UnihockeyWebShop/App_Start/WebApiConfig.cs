@@ -17,7 +17,7 @@ namespace UnihockeyWebShop
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
-                defaults: new { id = RouteParameter.Optional }
+                defaults: new { action="index" ,  id = RouteParameter.Optional }
             );
         }
     }
