@@ -20,12 +20,15 @@
 
     <form id="form1" runat="server">
         <div>
-            <label>Username: </label>
-            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
-            <label>Passwort: </label>
-            <asp:TextBox ID="TextBox4" TextMode="Password" runat="server"></asp:TextBox>
-
-            <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" />
+            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;">Username:</label>
+            <br />
+            <asp:TextBox style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%;" ID="TextBox3" runat="server"></asp:TextBox><br />
+            <br />
+            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;">Passwort: </label>
+            <br />
+            <asp:TextBox style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%;" ID="TextBox4" TextMode="Password" runat="server"></asp:TextBox>
+            <br />
+            <asp:Button style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" />
             <asp:Label ID="Label2" runat="server"></asp:Label>
 
         </div>
