@@ -20,10 +20,21 @@
 
     <form id="form1" runat="server">
         <div>
-            <h1 style="position:center;margin:5%;">Login</h1>
+            <label>Username: </label>
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <label>Passwort: </label>
+            <asp:TextBox ID="TextBox4" TextMode="Password" runat="server"></asp:TextBox>
+
+            <asp:Button ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" />
+            <asp:Label ID="Label2" runat="server"></asp:Label>
+
         </div>
     </form>
-    
 
+    <%-- <form id="form1" runat="server">
+        <div>
+            <h1 style="position:center;margin:5%;">Login</h1>
+        </div>
+    </form>--%>
 </body>
 </html>
