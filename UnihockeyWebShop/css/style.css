@@ -250,3 +250,12 @@ img.hover-shadow {
     font-size: 15px;
     margin: 2%;
 }
+#UserH1{
+    font-size: 25px;
+    color: black;
+    text-align: left;
+}
+#HelloUserDiv{
+    margin-left: 45%;
+    margin-top: 2%;
+}

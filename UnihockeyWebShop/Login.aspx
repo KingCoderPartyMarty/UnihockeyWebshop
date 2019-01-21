@@ -28,8 +28,8 @@
             <br />
             <asp:TextBox style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%;" ID="PasswortTextBox" TextMode="Password" runat="server"></asp:TextBox>
             <br />
-            <asp:Button style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" />
-            <asp:Label ID="LoginFailErrorMessage" runat="server"></asp:Label>
+            <asp:Button style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" /><br />
+            <asp:Label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 35%;color:red;" ID="LoginFailErrorMessage" runat="server"></asp:Label>
 
         </div>
     </form>

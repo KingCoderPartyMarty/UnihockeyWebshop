@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Web;
 using System.Web.Script.Serialization;
@@ -26,6 +28,8 @@ namespace WebFormUnihockeyShop
                 Password = PasswortTextBox.Text
             };
 
+
+
             using (WebClient client = new WebClient())
             {
                 string inputJson = (new JavaScriptSerializer()).Serialize(benutzer);
@@ -45,5 +49,6 @@ namespace WebFormUnihockeyShop
                 }
             }
         }
+    
     }
 }
