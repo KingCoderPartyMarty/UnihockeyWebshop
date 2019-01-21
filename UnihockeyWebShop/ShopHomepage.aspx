@@ -31,16 +31,16 @@
   
     <!-- Bilder Galerie -->
     <div id="IMGGallery">
-        <div id="column1">
+        <div class="column1">
             <!-- Bild einfügen welches auf nächste Seite verweist -->
-            <img id="StockeBild1" src="/img/hofbauer.jpg"/>
+            <img class="StockeBild1" src="/img/hofbauer.jpg"/>
         </div>
 
-        <div id="column2">
-           <img id="StockeBild2" src="/img/stockgegenwurst.jpg"/>
+        <div class="column1">
+           <img class="StockeBild1" src="/img/stockgegenwurst.jpg"/>
         </div>
-        <div id="column3">
-           <img id="StockeBild3" src="/img/regal.jpg"/>
+        <div class="column1">
+           <img class="StockeBild1" src="/img/regal.jpg"/>
         </div>
  
     </div>

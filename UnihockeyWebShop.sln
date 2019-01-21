@@ -3,9 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnihockeyWebShop", "UnihockeyWebShop\UnihockeyWebShop.csproj", "{6B23760D-18D5-47E9-BD9A-2ABE665570B8}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebFormUnihockeyShop", "WebFormUnihockeyShop\WebFormUnihockeyShop.csproj", "{11F3505B-E203-4925-8B8A-4CB034B058AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnihockeyWebShop", "UnihockeyWebShop\UnihockeyWebShop.csproj", "{AEB10A1B-E1EF-4D6C-809A-C324AFB527D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6B23760D-18D5-47E9-BD9A-2ABE665570B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6B23760D-18D5-47E9-BD9A-2ABE665570B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6B23760D-18D5-47E9-BD9A-2ABE665570B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6B23760D-18D5-47E9-BD9A-2ABE665570B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{11F3505B-E203-4925-8B8A-4CB034B058AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{11F3505B-E203-4925-8B8A-4CB034B058AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{11F3505B-E203-4925-8B8A-4CB034B058AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{11F3505B-E203-4925-8B8A-4CB034B058AD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AEB10A1B-E1EF-4D6C-809A-C324AFB527D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AEB10A1B-E1EF-4D6C-809A-C324AFB527D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AEB10A1B-E1EF-4D6C-809A-C324AFB527D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AEB10A1B-E1EF-4D6C-809A-C324AFB527D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

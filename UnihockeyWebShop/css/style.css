@@ -37,10 +37,11 @@ li a:hover:not(.active) {
     background-color: gray;
 	color: white;
 }
-#StockeBild{
-	width: 300%;
+.StockeBild1{
+	width: 150%;
     height: auto;
 }
+
 #column{
 	margin-left: 2%;
 	margin-right:2%;
@@ -89,6 +90,7 @@ td, th {
 #IMGGallery{
 	float:left;
 	margin-left: 4%;
+    margin-right: 3%;
 	width: 100%;
 }
 #InfoZone{
@@ -116,10 +118,11 @@ body {
   clear: both;
 }
 
-.column {
+.column1 {
   float: left;
   width: 25%;
 }
+
 
 /* The Modal (background) */
 .modal {
@@ -212,7 +215,9 @@ body {
 img {
   margin-bottom: -4px;
 }
+div{
 
+}
 .caption-container {
   text-align: center;
   background-color: black;

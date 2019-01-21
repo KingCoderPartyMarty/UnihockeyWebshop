@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("UnihockeyWebShop")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("UBS AG")]
 [assembly: AssemblyProduct("UnihockeyWebShop")]
-[assembly: AssemblyCopyright("Copyright ©  2018")]
+[assembly: AssemblyCopyright("Copyright © UBS AG 2019")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // The following GUID is for the ID of the typelib if this project is exposed to COM
-[assembly: Guid("6b23760d-18d5-47e9-bd9a-2abe665570b8")]
+[assembly: Guid("aeb10a1b-e1ef-4d6c-809a-c324afb527d5")]
 
 // Version information for an assembly consists of the following four values:
 //
