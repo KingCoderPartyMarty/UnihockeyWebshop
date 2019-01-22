@@ -20,16 +20,20 @@
 
     <form id="form1" runat="server">
         <div>
-            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;">Username:</label>
+            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 50%;">Username:</label>
             <br />
-            <asp:TextBox style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%;" ID="BenutzernameTextBox" runat="server"></asp:TextBox><br />
+            <asp:TextBox Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="BenutzernameTextBox" runat="server"></asp:TextBox><br />
             <br />
-            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;">Passwort: </label>
+            <label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 50%;">Passwort: </label>
             <br />
-            <asp:TextBox style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%;" ID="PasswortTextBox" TextMode="Password" runat="server"></asp:TextBox>
+            <asp:TextBox Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="PasswortTextBox" TextMode="Password" runat="server"></asp:TextBox>
             <br />
-            <asp:Button style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" /><br />
-            <asp:Label style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 35%;color:red;" ID="LoginFailErrorMessage" runat="server"></asp:Label>
+
+            <asp:Button Style="margin-top:2%; font-size: 20px; float: left; margin-left: 45%;" ID="Button1" runat="server" Text="Log In" OnClick="LoginButton_Click" /><br />
+            <asp:Button Style="margin-top:2%; font-size: 20px; float: right; margin-right: 40%;" ID="Button2" runat="server" Text="Registrieren" OnClick="RegistrateButton_Click" />
+
+            <br />
+            <asp:Label Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 40%; color: red;" ID="LoginFailErrorMessage" runat="server"></asp:Label>
 
         </div>
     </form>

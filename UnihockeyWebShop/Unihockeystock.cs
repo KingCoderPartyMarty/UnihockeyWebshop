@@ -12,7 +12,7 @@ namespace UnihockeyWebShop
         public int Id { get; set; }
 
         [Column("UnihockeyStock")]
-        public string UnihockeyStock1 { get; set; }
+        public string UnihockeyStock { get; set; }
 
         public string Marke { get; set; }
 

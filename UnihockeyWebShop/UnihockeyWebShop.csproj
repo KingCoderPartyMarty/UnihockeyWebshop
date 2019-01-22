@@ -127,6 +127,7 @@
     <Content Include="img\stockgegenwurst.jpg" />
     <Content Include="img\Unihockey.jpg" />
     <Content Include="Login.aspx" />
+    <Content Include="Registration.aspx" />
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="ShopHomepage.aspx" />
@@ -148,6 +149,13 @@
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.aspx.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Registration.aspx.designer.cs">
+      <DependentUpon>Registration.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ShopHomepage.aspx.cs">
       <DependentUpon>ShopHomepage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

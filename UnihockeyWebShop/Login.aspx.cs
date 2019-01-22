@@ -19,6 +19,11 @@ namespace WebFormUnihockeyShop
         {
 
         }
+
+        protected void RegistrateButton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Registration.aspx");
+        }
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string apiUrl = "http://localhost:60882/api/Benutzers/CheckBenutzer/";
@@ -49,6 +54,6 @@ namespace WebFormUnihockeyShop
                 }
             }
         }
-    
+
     }
 }

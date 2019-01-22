@@ -7,10 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WebFormUnihockeyShop {
+namespace UnihockeyWebShop {
     
     
-    public partial class Login {
+    public partial class Registration {
         
         /// <summary>
         /// form1 control.
@@ -40,30 +40,39 @@ namespace WebFormUnihockeyShop {
         protected global::System.Web.UI.WebControls.TextBox PasswortTextBox;
         
         /// <summary>
-        /// Button1 control.
+        /// PasswortBestaetigenTextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.TextBox PasswortBestaetigenTextBox;
         
         /// <summary>
-        /// Button2 control.
+        /// RegistrierenButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button2;
+        protected global::System.Web.UI.WebControls.Button RegistrierenButton;
         
         /// <summary>
-        /// LoginFailErrorMessage control.
+        /// ZurueckButton control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LoginFailErrorMessage;
+        protected global::System.Web.UI.WebControls.Button ZurueckButton;
+        
+        /// <summary>
+        /// RegistrationErrorMessage control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label RegistrationErrorMessage;
     }
 }
