@@ -5,13 +5,14 @@ namespace UnihockeyWebShop
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Linq;
 
-    public partial class WebShopDBContext : DbContext
+    public partial class WebshopDBContext : DbContext
     {
-        public WebShopDBContext()
-            : base("name=WebShopDBContext")
+        public WebshopDBContext()
+            : base("name=WebshopDBContext")
         {
         }
 
+        public virtual DbSet<C__MigrationHistory> C__MigrationHistory { get; set; }
         public virtual DbSet<Benutzer> Benutzer { get; set; }
         public virtual DbSet<Unihockeystock> Unihockeystock { get; set; }
 

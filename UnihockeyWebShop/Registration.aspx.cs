@@ -28,7 +28,9 @@ namespace UnihockeyWebShop
                 var benutzer = new Benutzer()
                 {
                     Username = BenutzernameTextBox.Text,
-                    Password = PasswortTextBox.Text
+                    Password = PasswortTextBox.Text,
+                    Email = EmailTextBox.Text
+                    
                 };
 
                 using (WebClient client = new WebClient())

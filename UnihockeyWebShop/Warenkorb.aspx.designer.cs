@@ -10,7 +10,7 @@
 namespace UnihockeyWebShop {
     
     
-    public partial class Uebersicht {
+    public partial class Warenkorb {
         
         /// <summary>
         /// form1 control.
@@ -31,15 +31,6 @@ namespace UnihockeyWebShop {
         protected global::System.Web.UI.WebControls.Button loginbutton;
         
         /// <summary>
-        /// UserH1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label UserH1;
-        
-        /// <summary>
         /// GridViewStock control.
         /// </summary>
         /// <remarks>
@@ -49,21 +40,12 @@ namespace UnihockeyWebShop {
         protected global::System.Web.UI.WebControls.GridView GridViewStock;
         
         /// <summary>
-        /// WarenkorbLabel control.
+        /// Button1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label WarenkorbLabel;
-        
-        /// <summary>
-        /// ButtonToWarenkorb control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button ButtonToWarenkorb;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

@@ -18,8 +18,8 @@
     </header>
     <form id="form1" runat="server">
         <div>
-             <div id="loginbuttonDIV">
-                <asp:Button runat="server" id="loginbutton" OnClick="loginbutton_Click" name="BtnLogout" Text="Logout"/>
+            <div id="loginbuttonDIV">
+                <asp:Button runat="server" ID="loginbutton" OnClick="loginbutton_Click" name="BtnLogout" Text="Logout" />
             </div>
             <div id="HelloUserDiv">
                 <asp:Label runat="server" ID="UserH1"></asp:Label>
@@ -31,13 +31,17 @@
                 <asp:BoundField ItemStyle-Width="30%" DataField="UnihockeyStock" HeaderText="Stock" />
                 <asp:BoundField ItemStyle-Width="30%" DataField="Marke" HeaderText="Marke" />
                 <asp:BoundField ItemStyle-Width="30%" DataField="Preis" HeaderText="Preis" />
-                <asp:TemplateField ItemStyle-Width="10%"  ShowHeader="true" HeaderText="Zum Warenkorb">
+                <asp:TemplateField ItemStyle-Width="10%" ShowHeader="true" HeaderText="Zum Warenkorb">
                     <ItemTemplate>
-                        <asp:Button ID="ButtonAddToWarenkorb"  runat="server" CausesValidation="true"  OnClick="ButtonAddToWarenkorb_Click" Text="Hinzufügen" />
+                        <asp:Button ID="ButtonAddToWarenkorb" runat="server" CausesValidation="true" OnClick="ButtonAddToWarenkorb_Click" Text="Hinzufügen" />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>
         </asp:GridView>
+        <br />
+        <asp:Label runat="server" ID="WarenkorbLabel"></asp:Label><br />
+        <asp:Button ID="ButtonToWarenkorb" runat="server" OnClick="ButtonToWarenkorb_Click" Text="Zum Warenkorb" />
+
     </form>
 </body>
 </html>

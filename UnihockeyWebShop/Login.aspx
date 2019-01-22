@@ -38,10 +38,6 @@
         </div>
     </form>
 
-    <%-- <form id="form1" runat="server">
-        <div>
-            <h1 style="position:center;margin:5%;">Login</h1>
-        </div>
-    </form>--%>
+
 </body>
 </html>

@@ -15,7 +15,7 @@ namespace UnihockeyWebShop
         protected void Page_Load(object sender, EventArgs e)
         {
             UserH1.Text = "Welcome "+((Benutzer)Session[0]).Username;
-            using (var db = new WebShopDBContext())
+            using (var db = new WebshopDBContext())
             {
                 db.Unihockeystock.ToList().ForEach(s => StockListe.Add(s));
             }
@@ -28,6 +28,8 @@ namespace UnihockeyWebShop
         {
             int RowId = ((GridViewRow)((Button)sender).Parent.Parent).RowIndex;
             var stock = StockListe[RowId];
+            WarenListe.Add(stock);
+            WarenkorbLabel.Text = WarenkorbLabel.Text + "," + stock.UnihockeyStock;
         }
 
         protected void loginbutton_Click(object sender, EventArgs e)
@@ -38,6 +40,14 @@ namespace UnihockeyWebShop
         protected void GridViewStock_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
+        }
+
+        protected void ButtonToWarenkorb_Click(object sender, EventArgs e)
+        {
+            var waren = (WarenkorbLabel.Text.Split(',')).ToList();
+            waren.RemoveAt(0);
+            Session["Waren"] = waren;
+            Response.Redirect("Warenkorb.aspx");
         }
     }
 }

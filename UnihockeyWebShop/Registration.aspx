@@ -23,6 +23,8 @@
                 <asp:TextBox Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="PasswortTextBox" runat="server" TextMode="Password"></asp:TextBox><br />
                 <p style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 50%;">Passwort</p><br />
                 <asp:TextBox Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="PasswortBestaetigenTextBox" runat="server" TextMode="Password"></asp:TextBox><br />
+                 <p style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 50%;">Email</p><br />
+                <asp:TextBox Style="position: relative; margin-top: 2%; font-size: 20px; float: left; margin-left: 45%;" ID="EmailTextBox" runat="server"></asp:TextBox><br />
 
                 <asp:Button Style="margin-top:2%; font-size: 20px; float: left; margin-left: 45%;" ID="RegistrierenButton" runat="server" Text="Registrieren" OnClick="RegistrierenButton_Click" />
                 <asp:Button Style="margin-top:2%; font-size: 20px; float: right; margin-right: 40%;" ID="ZurueckButton" runat="server" Text="Zurueck" OnClick="ZurueckButton_Click" />

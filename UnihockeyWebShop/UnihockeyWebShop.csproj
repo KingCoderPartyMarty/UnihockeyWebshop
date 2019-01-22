@@ -132,12 +132,14 @@
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="ShopHomepage.aspx" />
     <Content Include="Uebersicht.aspx" />
+    <Content Include="Warenkorb.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Benutzer.cs" />
     <Compile Include="Controllers\BenutzersController.cs" />
+    <Compile Include="C__MigrationHistory.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -171,7 +173,14 @@
       <DependentUpon>Uebersicht.aspx</DependentUpon>
     </Compile>
     <Compile Include="Unihockeystock.cs" />
-    <Compile Include="WebShopDBContext.cs" />
+    <Compile Include="Warenkorb.aspx.cs">
+      <DependentUpon>Warenkorb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Warenkorb.aspx.designer.cs">
+      <DependentUpon>Warenkorb.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebshopDBContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />

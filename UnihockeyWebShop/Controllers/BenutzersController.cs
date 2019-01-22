@@ -14,7 +14,7 @@ namespace UnihockeyWebShop.Controllers
 {
     public class BenutzersController : ApiController
     {
-        private WebShopDBContext db = new WebShopDBContext();
+        private WebshopDBContext db = new WebshopDBContext();
 
         // GET: api/Benutzers
         public IQueryable<Benutzer> GetBenutzer()
@@ -34,7 +34,6 @@ namespace UnihockeyWebShop.Controllers
 
             return Ok(benutzer);
         }
-        // GET: api/Benutzers/CheckBenutzer/...
         [ResponseType(typeof(Benutzer))]
         public IHttpActionResult CheckBenutzer(Benutzer benutzer)
         {
