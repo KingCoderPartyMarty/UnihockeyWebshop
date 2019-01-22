@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Uebersicht.aspx.cs" Inherits="UnihockeyWebShop.Uebersicht" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" EnableEventValidation="false" CodeBehind="Uebersicht.aspx.cs" Inherits="UnihockeyWebShop.Uebersicht" %>
 
 <!DOCTYPE html>
 
@@ -18,20 +18,22 @@
     </header>
     <form id="form1" runat="server">
         <div>
+             <div id="loginbuttonDIV">
+                <asp:Button runat="server" id="loginbutton" OnClick="loginbutton_Click" name="BtnLogout" Text="Logout"/>
+            </div>
             <div id="HelloUserDiv">
                 <asp:Label runat="server" ID="UserH1"></asp:Label>
             </div>
         </div>
         <br />
-        <asp:GridView ID="GridViewStock" runat="server">
+        <asp:GridView OnRowCommand="GridViewStock_RowCommand" ID="GridViewStock" runat="server" AutoGenerateColumns="false">
             <Columns>
-                <asp:BoundField DataField="UnihockeyStock" HeaderText="Stock" />
-                <asp:BoundField DataField="Marke" HeaderText="Marke" />
-                <asp:BoundField DataField="Preis" HeaderText="Preis" />
-                <asp:TemplateField ShowHeader="true" HeaderText="Zum Warenkorb">
+                <asp:BoundField ItemStyle-Width="30%" DataField="UnihockeyStock" HeaderText="Stock" />
+                <asp:BoundField ItemStyle-Width="30%" DataField="Marke" HeaderText="Marke" />
+                <asp:BoundField ItemStyle-Width="30%" DataField="Preis" HeaderText="Preis" />
+                <asp:TemplateField ItemStyle-Width="10%"  ShowHeader="true" HeaderText="Zum Warenkorb">
                     <ItemTemplate>
-                        <asp:Button ID="ButtonAddToWarenkorb" runat="server" CausesValidation="false" OnClick="ButtonAddToWarenkorb_Click"
-                            Text="Hinzufügen" CommandArgument='<%# Eval("id") %>' />
+                        <asp:Button ID="ButtonAddToWarenkorb"  runat="server" CausesValidation="true"  OnClick="ButtonAddToWarenkorb_Click" Text="Hinzufügen" />
                     </ItemTemplate>
                 </asp:TemplateField>
             </Columns>

@@ -10,6 +10,7 @@ namespace UnihockeyWebShop
 {
     public partial class Uebersicht : System.Web.UI.Page
     {
+        public List<Unihockeystock> WarenListe { get; set; } = new List<Unihockeystock>();
         public ObservableCollection<Unihockeystock> StockListe { get; set; } = new ObservableCollection<Unihockeystock>();
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,6 +25,17 @@ namespace UnihockeyWebShop
         }
 
         protected void ButtonAddToWarenkorb_Click(object sender, EventArgs e)
+        {
+            int RowId = ((GridViewRow)((Button)sender).Parent.Parent).RowIndex;
+            var stock = StockListe[RowId];
+        }
+
+        protected void loginbutton_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ShopHomepage.aspx");
+        }
+
+        protected void GridViewStock_RowCommand(object sender, GridViewCommandEventArgs e)
         {
 
         }
