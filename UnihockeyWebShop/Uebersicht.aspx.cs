@@ -12,6 +12,8 @@ namespace UnihockeyWebShop
     {
         public List<Unihockeystock> WarenListe { get; set; } = new List<Unihockeystock>();
         public ObservableCollection<Unihockeystock> StockListe { get; set; } = new ObservableCollection<Unihockeystock>();
+
+        //Wenn seite geladen wird, die Liste der Stöcke abfüllen
         protected void Page_Load(object sender, EventArgs e)
         {
             UserH1.Text = "Welcome "+((Benutzer)Session[0]).Username;
@@ -23,7 +25,7 @@ namespace UnihockeyWebShop
             
             GridViewStock.DataBind();
         }
-
+        //Stock zum Warenkorb hinzufügen
         protected void ButtonAddToWarenkorb_Click(object sender, EventArgs e)
         {
             int RowId = ((GridViewRow)((Button)sender).Parent.Parent).RowIndex;
@@ -31,7 +33,7 @@ namespace UnihockeyWebShop
             WarenListe.Add(stock);
             WarenkorbLabel.Text = WarenkorbLabel.Text + "," + stock.UnihockeyStock;
         }
-
+        //LogOut zur Home Seite
         protected void loginbutton_Click(object sender, EventArgs e)
         {
             Response.Redirect("ShopHomepage.aspx");
@@ -41,7 +43,7 @@ namespace UnihockeyWebShop
         {
 
         }
-
+        //Zur Warenkorb Seite
         protected void ButtonToWarenkorb_Click(object sender, EventArgs e)
         {
             var waren = (WarenkorbLabel.Text.Split(',')).ToList();

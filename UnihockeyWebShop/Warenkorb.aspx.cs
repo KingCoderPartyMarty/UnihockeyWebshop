@@ -12,7 +12,7 @@ namespace UnihockeyWebShop
     public partial class Warenkorb : System.Web.UI.Page
     {
         public ObservableCollection<Unihockeystock> StockListe { get; set; } = new ObservableCollection<Unihockeystock>();
-
+        //Wenn seite geladen wird, die Liste der Stöcke abfüllen
         protected void Page_Load(object sender, EventArgs e)
         {
             var waren = (List<string>)Session[1];
@@ -26,7 +26,7 @@ namespace UnihockeyWebShop
             GridViewStock.DataSource = StockListe;
             GridViewStock.DataBind();
         }
-
+        //Bestellung per mail senden
         protected void Button1_Click(object sender, EventArgs e)
         {
             MailMessage mail = new MailMessage("simon.schaeppi@gmail.com", ((Benutzer)(Session[0])).Email);
@@ -47,7 +47,7 @@ namespace UnihockeyWebShop
             mail.Body += "Ueberweisung an Konto: CH 8900 4590 1256 2999";
             client.Send(mail);
         }
-
+        //LogOut zurück zur Home Seite
         protected void loginbutton_Click(object sender, EventArgs e)
         {
             Response.Redirect("ShopHomepage.aspx");

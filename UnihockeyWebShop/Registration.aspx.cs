@@ -16,10 +16,12 @@ namespace UnihockeyWebShop
         {
 
         }
+        //Zurück zur Login Seite
         protected void ZurueckButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Login.aspx");
         }
+        //Neuen Benutzer registrieren
         protected void RegistrierenButton_Click(object sender, EventArgs e)
         {
             if (PasswortTextBox.Text.Equals(PasswortBestaetigenTextBox.Text))

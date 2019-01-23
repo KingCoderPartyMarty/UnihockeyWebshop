@@ -19,11 +19,12 @@ namespace WebFormUnihockeyShop
         {
 
         }
-
+        //Registration Seite anzeigen
         protected void RegistrateButton_Click(object sender, EventArgs e)
         {
             Response.Redirect("Registration.aspx");
         }
+        //Benutzer überprüfen und einloggen
         protected void LoginButton_Click(object sender, EventArgs e)
         {
             string apiUrl = "http://localhost:60882/api/Benutzers/CheckBenutzer/";
@@ -32,8 +33,6 @@ namespace WebFormUnihockeyShop
                 Username = BenutzernameTextBox.Text,
                 Password = PasswortTextBox.Text
             };
-
-
 
             using (WebClient client = new WebClient())
             {
